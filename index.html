@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Typing Test | Check Your WPM Speed</title>
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        /* --- ADS STYLING --- */
+        .ad-space {
+            background: #f1f5f9;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            color: #64748b;
+            font-size: 12px;
+            margin: 20px 0;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            background: #eef2ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .stat-box {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .stat-box span {
+            display: block;
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+
+        #text-display {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fafafa;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+            user-select: none;
+        }
+
+        .correct { color: #16a34a; }
+        .incorrect { color: #dc2626; background-color: #fee2e2; }
+        .current { border-bottom: 3px solid var(--primary-color); }
+
+        #text-input {
+            width: 100%;
+            height: 80px;
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            box-sizing: border-box;
+            resize: none;
+        }
+
+        #text-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HINT: TOP LEADERBOARD AD (Best for EPMV/RPM) -->
+    <!-- Is jagah horizontal banner ad (728x90) lagayein, yeh page khulte hi dikhta hai -->
+    <div class="ad-space">
+        <!-- [PASTE YOUR AD SCRIPT HERE - TOP BANNER] -->
+        <div>Advertisement - Top Banner (728x90)</div>
+    </div>
+
+    <div class="container">
+        <h1>Free Online Typing Test</h1>
+
+        <!-- Real-time Stats -->
+        <div class="stats-container">
+            <div class="stat-box">Time Left: <span id="timer">60</span>s</div>
+            <div class="stat-box">WPM: <span id="wpm">0</span></div>
+            <div class="stat-box">Accuracy: <span id="accuracy">100</span>%</div>
+        </div>
+
+        <!-- Text to Type -->
+        <div id="text-display">Loading text...</div>
+
+        <!-- User Input Area -->
+        <textarea id="text-input" placeholder="Start typing here... The timer will start automatically." disabled></textarea>
+
+        <div class="btn-container">
+            <button id="reset-btn">Restart Test</button>
+        </div>
+
+        <!-- 2. HINT: MID-CONTENT AD (High Engagement) -->
+        <!-- Jab user typing test khatam karega, tab is ad par sabse zyada nazar ghumti hai -->
+        <div class="ad-space">
+            <!-- [PASTE YOUR AD SCRIPT HERE - IN-FEED AD] -->
+            <div>Advertisement - Mid Content (Responsive)</div>
+        </div>
+
+    </div>
+
+    <!-- 3. HINT: BOTTOM FOOTER AD (Extra Revenue) -->
+    <!-- Page ke bilkul neche ke liye -->
+    <div class="ad-space">
+        <!-- [PASTE YOUR AD SCRIPT HERE - BOTTOM BANNER] -->
+      <script src="https://pl30154263.effectivecpmnetwork.com/32/85/ce/3285ceba38d7ad53616c4ba85c7b90ca.js"></script>
+<script async="async" data-cfasync="false" src="https://pl30154264.effectivecpmnetwork.com/294a69165c401d7f11105060b4e16849/invoke.js"></script>
+<div id="container-294a69165c401d7f11105060b4e16849"></div>
+
+        <div>Advertisement - Footer Banner</div>
+    </div>
+
+    <script>
+        const sampleParagraphs = [
+            "The quick brown fox jumps over the lazy dog. This classic phrase contains every letter in the English alphabet and is perfect for practicing your typing speed and finger movement.",
+            "Success is not final, failure is not fatal: it is the courage to continue that counts. Working hard on your goals every single day will eventually bring the results you desire.",
+            "Technology is evolving at a very fast pace. Learning how to type efficiently is a core skill in the modern digital world, saving you hours of work every week."
+        ];
+
+        let timeLeft = 60;
+        let timer = null;
+        let isTracking = false;
+        let currentText = "";
+        let totalCharactersTyped = 0;
+        let errors = 0;
+
+        const textDisplay = document.getElementById("text-display");
+        const textInput = document.getElementById("text-input");
+        const timerElement = document.getElementById("timer");
+        const wpmElement = document.getElementById("wpm");
+        const accuracyElement = document.getElementById("accuracy");
+        const resetBtn = document.getElementById("reset-btn");
+
+        function initTest() {
+            clearInterval(timer);
+            timeLeft = 60;
+            isTracking = false;
+            errors = 0;
+            totalCharactersTyped = 0;
+            
+            timerElement.innerText = timeLeft;
+            wpmElement.innerText = "0";
+            accuracyElement.innerText = "100";
+            textInput.value = "";
+            textInput.disabled = false;
+
+            // Pick random paragraph
+            currentText = sampleParagraphs[Math.floor(Math.random() * sampleParagraphs.length)];
+            
+            // Render text word by word or character by character
+            textDisplay.innerHTML = currentText.split('').map((char, index) => {
+                if(index === 0) return `<span class="current">${char}</span>`;
+                return `<span>${char}</span>`;
+            }).join('');
+        }
+
+        function startTimer() {
+            isTracking = true;
+            timer = setInterval(() => {
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    timerElement.innerText = timeLeft;
+                    calculateStats();
+                } else {
+                    clearInterval(timer);
+                    textInput.disabled = true;
+                    // 4. HINT: POPUP/INTERSTITIAL AD TIME
+                    // Aap yahan automatic popup ad trigger kar sakti hain test khatam hone par
+                    alert("Test Finished! Check your final scores.");
+                }
+            }, 1000);
+        }
+
+        textInput.addEventListener("input", () => {
+            if (!isTracking && textInput.value.length > 0) {
+                startTimer();
+            }
+
+            const inputChars = textInput.value.split('');
+            const spanChars = textDisplay.querySelectorAll('span');
+            errors = 0;
+            totalCharactersTyped = inputChars.length;
+
+            spanChars.forEach((span, index) => {
+                const character = inputChars[index];
+                
+                // Reset classes
+                span.className = '';
+
+                if (character == null) {
+                    if (index === inputChars.length) {
+                        span.classList.add('current');
+                    }
+                } else if (character === span.innerText) {
+                    span.classList.add('correct');
+                } else {
+                    span.classList.add('incorrect');
+                    errors++;
+                }
+            });
+
+            calculateStats();
+        });
+
+        function calculateStats() {
+            let timeElapsed = 60 - timeLeft;
+            if (timeElapsed <= 0) timeElapsed = 1;
+
+            // WPM calculation (1 word = 5 characters)
+            let words = totalCharactersTyped / 5;
+            let wpm = Math.round((words / timeElapsed) * 60);
+            wpmElement.innerText = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
+
+            // Accuracy calculation
+            if (totalCharactersTyped > 0) {
+                let accuracy = Math.round(((totalCharactersTyped - errors) / totalCharactersTyped) * 100);
+                accuracyElement.innerText = accuracy < 0 ? 0 : accuracy;
+            }
+        }
+
+        resetBtn.addEventListener("click", initTest);
+
+        // Load test on start
+        window.onload = initTest;
+    </script>
+</body>
+</html>
